@@ -1,0 +1,3 @@
+deb file:///mnt/astra/devel smolensk contrib main non-free
+deb file:///mnt/astra/base  smolensk contrib main non-free
+

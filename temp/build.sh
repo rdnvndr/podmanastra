@@ -1,0 +1,1 @@
+podman build . -t astralinux --volume /mnt/astra:/mnt/astra
