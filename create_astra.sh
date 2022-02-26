@@ -1,3 +1,4 @@
+sudo mkdir /mnt/astra
 podman run --interactive --tty --name astra --hostname=astra \
 --volume /tmp/.X11-unix:/tmp/.X11-unix --env DISPLAY --privileged  \
 --device /dev/snd --device /dev/input \
