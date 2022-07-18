@@ -1,10 +1,8 @@
-FROM astra16se
+FROM astra17
 ENV container=podman  
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN echo "root:qwerty" | chpasswd
-RUN echo "deb ftp://b11_31164242:4astra0@ftp.byethost11.com/htdocs/astra/base  smolensk contrib main non-free" >  /etc/apt/sources.list
-RUN echo "deb ftp://b11_31164242:4astra0@ftp.byethost11.com/htdocs/astra/devel smolensk contrib main non-free" >> /etc/apt/sources.list
 RUN apt-get -y update
 RUN apt-get -y upgrade
 
